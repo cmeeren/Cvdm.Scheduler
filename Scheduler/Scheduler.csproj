@@ -9,6 +9,10 @@
     <Company />
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
     <Description>Schedules execution of code.</Description>
+    <PackageLicenseUrl>https://github.com/cmeeren/Cvdm.Scheduler/blob/master/LICENSE</PackageLicenseUrl>
+    <Copyright></Copyright>
+    <PackageProjectUrl>https://github.com/cmeeren/Cvdm.Scheduler</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/cmeeren/Cvdm.Scheduler</RepositoryUrl>
   </PropertyGroup>
 
   <ItemGroup>
