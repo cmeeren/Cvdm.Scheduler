@@ -1,0 +1,18 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard1.2</TargetFramework>
+    <AssemblyName>Cvdm.Scheduler</AssemblyName>
+    <RootNamespace>Cvdm.Scheduler</RootNamespace>
+    <Authors>Christer van der Meeren</Authors>
+    <PackageRequireLicenseAcceptance>False</PackageRequireLicenseAcceptance>
+    <Company />
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <Description>Schedules execution of code.</Description>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="JetBrains.Annotations" Version="10.4.0" />
+  </ItemGroup>
+
+</Project>
