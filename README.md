@@ -1,5 +1,5 @@
 # Cvdm.Scheduler
-Schedules execution of a C# callback using `System.Threading.Timer`. Compatible with .NET Standard ≥1.2.
+Schedules execution of a C# callback using `System.Threading.Timer`.
 
 The library consists of an interface (`IScheduler`) and an implementation (`Scheduler`). The interface makes the scheduler easy to use with dependency injection. The implementation keeps internal references to all created timers, so you don't have to do that yourself if the scheduler lives at least as long as the timer (e.g. if the scheduler is a singleton component).
 
