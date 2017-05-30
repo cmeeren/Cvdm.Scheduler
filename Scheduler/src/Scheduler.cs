@@ -22,6 +22,7 @@
         private readonly ITimerFactory timerFactory = new TimerFactory();
         private readonly ITimeProvider time = new TimeProvider();
 
+        /// <summary>Initializes an instance of the <see cref="Scheduler" /> class.</summary>
         public Scheduler()
         {
         }

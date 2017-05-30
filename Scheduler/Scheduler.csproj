@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>netstandard1.2</TargetFramework>
+    <TargetFrameworks>netstandard1.2;net45</TargetFrameworks>
     <AssemblyName>Cvdm.Scheduler</AssemblyName>
     <RootNamespace>Cvdm.Scheduler</RootNamespace>
     <Authors>Christer van der Meeren</Authors>
@@ -13,16 +13,12 @@
     <Copyright></Copyright>
     <PackageProjectUrl>https://github.com/cmeeren/Cvdm.Scheduler</PackageProjectUrl>
     <RepositoryUrl>https://github.com/cmeeren/Cvdm.Scheduler</RepositoryUrl>
-    <Version>1.0.1</Version>
-    <PackageReleaseNotes>Documentation included in Nuget package</PackageReleaseNotes>
+    <Version>1.0.2</Version>
+    <PackageReleaseNotes>Add support for .NET Framework</PackageReleaseNotes>
   </PropertyGroup>
 
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
-    <DocumentationFile>bin\Release\netstandard1.2\Cvdm.Scheduler.xml</DocumentationFile>
+  <PropertyGroup>
+    <DocumentationFile>bin\$(Configuration)\$(TargetFramework)\Cvdm.Scheduler.xml</DocumentationFile>
   </PropertyGroup>
-
-  <ItemGroup>
-    <PackageReference Include="JetBrains.Annotations" Version="10.4.0" />
-  </ItemGroup>
 
 </Project>
