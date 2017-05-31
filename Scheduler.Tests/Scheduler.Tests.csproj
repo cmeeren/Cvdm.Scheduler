@@ -35,12 +35,6 @@
     <Compile Include="src\SchedulerTests.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Scheduler\Scheduler.csproj">
-      <Project>{51d5c15c-76ba-4b9a-9f48-8ac3fa773d4d}</Project>
-      <Name>Scheduler</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
     <Reference Include="Castle.Core, Version=4.0.0.0, Culture=neutral, PublicKeyToken=407dd0808d44fbdc, processorArchitecture=MSIL">
       <HintPath>..\packages\Castle.Core.4.0.0\lib\net45\Castle.Core.dll</HintPath>
     </Reference>
@@ -53,6 +47,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Scheduler\Scheduler.csproj">
+      <Project>{51d5c15c-76ba-4b9a-9f48-8ac3fa773d4d}</Project>
+      <Name>Scheduler</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

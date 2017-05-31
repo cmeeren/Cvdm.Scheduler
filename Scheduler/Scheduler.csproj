@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFrameworks>netstandard1.2;net45</TargetFrameworks>
+    <TargetFrameworks>netstandard1.2;net35;net45</TargetFrameworks>
     <AssemblyName>Cvdm.Scheduler</AssemblyName>
     <RootNamespace>Cvdm.Scheduler</RootNamespace>
     <Authors>Christer van der Meeren</Authors>
@@ -13,12 +13,16 @@
     <Copyright></Copyright>
     <PackageProjectUrl>https://github.com/cmeeren/Cvdm.Scheduler</PackageProjectUrl>
     <RepositoryUrl>https://github.com/cmeeren/Cvdm.Scheduler</RepositoryUrl>
-    <Version>1.0.2</Version>
-    <PackageReleaseNotes>Add support for .NET Framework</PackageReleaseNotes>
+    <Version>1.0.3</Version>
+    <PackageReleaseNotes>Add support for .NET Fremework 3.5</PackageReleaseNotes>
   </PropertyGroup>
 
   <PropertyGroup>
     <DocumentationFile>bin\$(Configuration)\$(TargetFramework)\Cvdm.Scheduler.xml</DocumentationFile>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(TargetFramework)'!='net35'">
+    <DefineConstants>FEATURE_ASSEMBLY_METADATA_ATTRIBUTE</DefineConstants>
   </PropertyGroup>
 
 </Project>
