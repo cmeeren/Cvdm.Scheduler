@@ -1,3 +1,7 @@
+# DEPRECATED
+
+Please see [Cvdm.Timer](https://github.com/cmeeren/Cvdm.Timer)
+
 # Cvdm.Scheduler
 Schedules execution of a C# callback using `System.Threading.Timer`.
 
